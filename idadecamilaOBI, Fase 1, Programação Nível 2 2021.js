@@ -11,8 +11,15 @@ for(i=0;i<3;i++){
       Lista.push(N);
       
    }
+
 }
 
-var Listacrescente = Lista.toSorted();
 
-printf("%d", Listacrescente[1]);
+Lista.sort(function(a,b){
+
+return a-b;
+   
+});
+ 
+printf("%d\n", Lista[1]);
+
